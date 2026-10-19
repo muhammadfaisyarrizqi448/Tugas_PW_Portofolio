@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMALA SPACE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan Font Google Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="LOGO.jpeg" alt="Logo Gemala" class="logo-img">
+                <span class="logo-text">GEMALA SPACE</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#divisions">DIVISIONS</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#join">JOIN US</a></li>
+            </ul>
+            <a href="#join" class="btn-apply">APPLY NOW</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (TAMPILAN UTAMA) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Siap ambil panggungmu?</h2>
+            <a href="#join" class="btn-main">DAFTAR SEKARANG</a>
+            
+            <div class="divisions-cards" id="divisions">
+                <div class="card">
+                    <div class="card-icon">🎸</div>
+                    <h3>Music Band</h3>
+                    <p>Divisi yang berfokus pada seni musik, instrumen, dan penampilan band secara langsung. Anggotanya biasanya bermain alat musik (seperti gitar, bass, drum) atau bernyanyi untuk mengisi acara musik.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💃</div>
+                    <h3>Tari Tradisional</h3>
+                    <p>Divisi yang mewadahi seni gerak dan tarian daerah atau tradisional. Fokusnya adalah melestarikan serta membawakan tarian-tarian budaya nusantara di berbagai acara pertunjukan.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🕺</div>
+                    <h3>Tari Modern</h3>
+                    <p>Divisi yang berfokus pada seni tari modern, kontemporer, atau koreografi kekinian (seperti street dance atau K-Pop dance cover). Divisi ini mengutamakan energi, kekompakan, dan teknik gerakan yang dinamis.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📷</div>
+                    <h3>Media</h3>
+                    <p>Divisi yang bertanggung jawab di balik layar terkait dokumentasi, publikasi, fotografi, videografi, pengelolaan media sosial, serta hal-hal kreatif yang menyangkut penyebaran informasi dan estetika visual organisasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION (FORMULIR PENDAFTARAN INTERAKTIF) -->
+    <section id="join" class="form-section">
+        <div class="form-card">
+            <h3>FORMULIR PENDAFTARAN GEMALA</h3>
+            <form class="form-body" onsubmit="event.preventDefault();">
+                <div class="form-left">
+                    <h4>Identitas Diri</h4>
+                    <input type="text" placeholder="Masukkan nama lengkap anda" required>
+                    <input type="email" placeholder="nama@gmail.com" required>
+                    <input type="tel" placeholder="No.Telepon" required>
+                    <textarea placeholder="Tujuan gabung Gemala..."></textarea>
+                </div>
+                
+                <div class="form-right">
+                    <h4>Divisi (Klik untuk memilih)</h4>
+                    <div class="divisi-grid">
+                        <label class="divisi-box">
+                            <input type="radio" name="divisi" value="Music Band" required>
+                            <div class="div-icon">🎸</div>
+                            <span>Music Band</span>
+                        </label>
+                        <label class="divisi-box">
+                            <input type="radio" name="divisi" value="Tari Modern">
+                            <div class="div-icon">🕺</div>
+                            <span>Tari Modern</span>
+                        </label>
+                        <label class="divisi-box">
+                            <input type="radio" name="divisi" value="Tari Tradisional">
+                            <div class="div-icon">💃</div>
+                            <span>Tari Tradisional</span>
+                        </label>
+                        <label class="divisi-box">
+                            <input type="radio" name="divisi" value="Media">
+                            <div class="div-icon">📷</div>
+                            <span>Media</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="btn-submit">SUBMIT PENDAFTARAN</button>
+        </div>
+    </section>
+
+</body>
+</html>
